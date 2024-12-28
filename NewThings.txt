@@ -1,0 +1,5 @@
+standard deviation
+lamda function
+normal distribution
+one hot encoding
+CROSSS VALIDATION
