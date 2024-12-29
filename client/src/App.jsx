@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch locations on page load
-    axios.get("http://127.0.0.1:5000/get_location_names").then((response) => {
+    axios.get("http://127.0.0.1:8000/get_location_names").then((response) => {
       if (response.data) {
         setLocations(response.data.locations || []);
       }
@@ -21,7 +21,7 @@ const App = () => {
 
   const handleEstimatePrice = () => {
     axios
-      .post("http://127.0.0.1:5000/predict_home_price", {
+      .post("http://127.0.0.1:8000/predict_home_price", {
         total_sqft: parseFloat(sqft),
         bhk: parseInt(bhk),
         bath: parseInt(bathrooms),
