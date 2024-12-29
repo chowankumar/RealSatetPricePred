@@ -39,6 +39,12 @@ const App = () => {
 
   return (
     <div>
+      {/* Navbar */}
+      <nav className="navbar">
+        <h1>54 Malhani Real Estate Analyzer</h1>
+      </nav>
+
+      {/* Content */}
       <div className="img"></div>
       <div className="form">
         <h2>Area (Square Feet)</h2>
